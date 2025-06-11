@@ -135,7 +135,7 @@ def main_view(page: ft.Page):
             reset_ui_for_new_operation()
 
         except Exception as ex:
-            estado_status.value, estado_status.color = "Error", ERROR_COLOR
+            estado_status.value, estado_status.color = "Error, Excel incompatible", ERROR_COLOR
             estado_status_card.border = ft.border.all(2, ERROR_COLOR)
             # --- ÚLTIMO CAMBIO ---
             # Ahora, el contenedor del archivo de entrada también se marca en rojo.
